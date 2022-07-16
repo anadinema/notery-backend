@@ -6,4 +6,4 @@ RUN mvn -f /docker/application/pom.xml clean package spring-boot:repackage
 FROM eclipse-temurin:11
 COPY --from=build /docker/application/target/notery-backend-service.jar /docker/notery-backend-service.jar
 EXPOSE 9092 3306
-ENTRYPOINT ["java","-jar","/notery-backend-service./docker/notery-backend-service.jar"]
+ENTRYPOINT ["java","-jar","/docker/notery-backend-service.jar"]
