@@ -1,4 +1,4 @@
-package org.bittybit.proj;
+package org.bittybit.proj.backend;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
