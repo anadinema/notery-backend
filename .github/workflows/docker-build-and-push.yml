@@ -18,4 +18,5 @@ jobs:
       run: |
         docker build . --file Dockerfile --tag notery-backend-api:latest
         docker tag notery-backend-api:latest bittybit/notery-backend-api:latest
+        docker login -u bittybit
         docker push bittybit/notery-backend-api:latest
