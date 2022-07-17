@@ -8,8 +8,13 @@ on:
 
 jobs:
   build:
+  
     runs-on: ubuntu-latest
+    
     steps:
+      - uses: actions/checkout@v3
+        name: Code checkout
+
       - uses: mr-smithers-excellent/docker-build-push@v5
         name: Build & push Docker image
         with:
