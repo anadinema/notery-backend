@@ -16,5 +16,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag notery-backend-api:latest
-        docker push bittybit/notery-backend-api:latest
+        docker build . --file Dockerfile --tag notery-backend-api:$(date)
+        docker tag notery-backend-api:$(date) bittybit/notery-backend-api:$(date)
+        docker push bittybit/notery-backend-api:$(date)
