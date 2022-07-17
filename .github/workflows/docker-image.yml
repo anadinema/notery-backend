@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: bittybit/notery-backend-api:$(date +%s)
+          tags: bittybit/notery-backend-api:latest
